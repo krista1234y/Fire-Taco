@@ -1,0 +1,138 @@
+---
+layout: none
+title: "FIRE TACO — Carry the Fire. Anywhere."
+description: "Fire Taco is a compact, durable fire kit holder shaped like a taco, with a built-in match striker. Water-resistant, refillable, and ready for adventure."
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}" />
+  <style>
+    :root{
+      --bg:#fffaf3;
+      --ink:#2a211b;
+      --accent:#5a3b2e;
+      --brand:#a2612d;
+      --muted:#6f5a4d;
+      --card:#fffdf8;
+      --ring:#e6d5c4;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,"Helvetica Neue",Arial,sans-serif;
+      color:var(--ink);
+      background:var(--bg);
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{max-width:1100px;margin:auto;padding:24px}
+    .hero{display:grid;gap:28px;align-items:center;grid-template-columns:1.2fr 1fr;margin-block:24px}
+    .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid var(--ring);border-radius:999px;background:#fff}
+    .title{font-size:clamp(32px,6vw,72px);line-height:1.02;margin:10px 0 8px 0;letter-spacing:0.4px}
+    .subtitle{font-size:clamp(16px,2.2vw,22px);color:var(--muted);margin:0}
+    .hero img{width:100%;height:auto;border-radius:18px;box-shadow:0 14px 40px rgba(42,33,27,.15)}
+    .kicker{color:var(--brand);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+    .lead{font-size:18px;color:var(--ink);max-width:54ch}
+
+    .grid{display:grid;gap:18px}
+    @media (min-width:780px){
+      .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+      .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    }
+
+    .card{background:var(--card);border:1px solid var(--ring);border-radius:18px;padding:18px;box-shadow:0 8px 24px rgba(42,33,27,.08)}
+    .card h3{margin:4px 0 8px 0}
+    .icon{width:28px;height:28px}
+
+    .how{display:grid;gap:16px}
+    @media (min-width:760px){.how{grid-template-columns:repeat(4,1fr)}}
+    .step{background:#fff;border:1px dashed var(--ring);border-radius:16px;padding:14px;display:flex;gap:12px;align-items:flex-start}
+    .step strong{display:block;margin-bottom:4px}
+
+    .cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:8px}
+    .btn{appearance:none;border:none;cursor:pointer;background:var(--brand);color:white;padding:12px 18px;border-radius:14px;font-weight:700;letter-spacing:.02em;box-shadow:0 8px 24px rgba(162,97,45,.28);text-decoration:none}
+    .btn:focus-visible{outline:3px solid #ffcc99;outline-offset:2px}
+    .ghost{background:#fff;color:var(--accent);border:1px solid var(--ring);box-shadow:none}
+
+    footer{margin:36px auto 24px auto;padding:12px 0;border-top:1px solid var(--ring);color:var(--muted);font-size:14px}
+    .small{font-size:13px;color:var(--muted)}
+
+    .ph{background:linear-gradient(135deg,#f1e6d7,#fffdf9);border:1px solid var(--ring);}
+    .rounded{border-radius:18px}
+
+    .reviews{margin-top:40px}
+    .review{border-left:4px solid var(--brand);padding-left:16px;margin-bottom:18px}
+  </style>
+</head>
+<body>
+  <header class="container hero">
+    <div>
+      <div class="badge">
+        <span class="kicker">Fire Kit Holder</span>
+      </div>
+      <h1 class="title">FIRE TACO</h1>
+      <p class="subtitle">Carry the Fire. Anywhere.</p>
+      <p class="lead">Fire Taco is a compact, durable <strong>fire kit holder</strong> shaped like a taco—water-resistant, refillable, and built with a <strong>match striker</strong> so you’re always ready to spark a flame.</p>
+      <div class="cta">
+        <a class="btn" href="#order">Order Now</a>
+        <a class="btn ghost" href="#features">See Features</a>
+      </div>
+    </div>
+    <div>
+      <img class="rounded ph" src="{{ '/hero-fire-taco.jpg' | relative_url }}" alt="Fire Taco fire kit holder" />
+    </div>
+  </header>
+
+  <main class="container" id="features">
+    <section class="grid cols-3">
+      <article class="card">
+        <h3>Easy to Light</h3>
+        <p class="small">Built-in striker plate for reliable ignition. Store matches and tinder inside.</p>
+      </article>
+      <article class="card">
+        <h3>Water-Resistant</h3>
+        <p class="small">Leather with beeswax finish keeps contents dry in the wild.</p>
+      </article>
+      <article class="card">
+        <h3>Compact & Refillable</h3>
+        <p class="small">Pocket-friendly design, refillable with tinder, matches, or ferro rod.</p>
+      </article>
+    </section>
+
+    <section style="margin-top:28px">
+      <h2 class="kicker">How it Works</h2>
+      <div class="how">
+        <div class="step"><div><strong>1. Unfold</strong><span class="small">Open taco, access tinder and matches.</span></div></div>
+        <div class="step"><div><strong>2. Strike</strong><span class="small">Use striker plate to light a match.</span></div></div>
+        <div class="step"><div><strong>3. Ignite</strong><span class="small">Light tinder, build your fire.</span></div></div>
+        <div class="step"><div><strong>4. Pack</strong><span class="small">Refill, close, and carry again.</span></div></div>
+      </div>
+    </section>
+
+    <section style="margin-top:30px" id="order" class="card">
+      <h3 style="margin-top:0">Order Fire Taco</h3>
+      <p class="small">Available in natural, chestnut, and midnight finishes. Bulk & wholesale discounts available.</p>
+      <div class="cta">
+        <a class="btn" href="mailto:orders@firetaco.co?subject=Fire%20Taco%20Order">Email to Order</a>
+        <a class="btn ghost" href="{{ '/Fire-Taco-Sell-Sheet.pdf' | relative_url }}">Download Product Sheet</a>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <h2 class="kicker">What People Say</h2>
+      <div class="review"><p>“Genius idea! The taco design keeps my matches dry and looks awesome around the campfire.” — Alex R.</p></div>
+      <div class="review"><p>“Finally a fire kit that’s as fun as it is practical. My go-to for backpacking trips.” — Jenna M.</p></div>
+      <div class="review"><p>“The built-in striker is a lifesaver. I never head into the woods without my Fire Taco.” — Sam K.</p></div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div>© <span id="y"></span> Fire Taco Co. • Adventure-ready fire kit holder with built-in striker.</div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
