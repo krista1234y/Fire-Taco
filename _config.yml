@@ -1,0 +1,22 @@
+# Site settings
+title: "Fire Taco"
+description: "Official Fire Taco website — compact, durable fire kit holder shaped like a taco, with a built-in match striker. Water-resistant, refillable, and adventure-ready."
+url: "https://TheFireTaco.github.io"
+baseurl: "/Fire-Taco"
+
+# Build settings
+theme: minima
+markdown: kramdown
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude non-site files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
