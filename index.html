@@ -117,7 +117,15 @@ description: "Fire Taco is a compact, durable fire starter kit case shaped like 
       <h3 style="margin-top:0">Order The Fire Taco</h3>
       <p class="small">100 percent genuine leather adds a classy and timeless look around any campfire.</p>
       <div class="cta">
-        <a class="btn" href="mailto:orders@firetaco.co?subject=Fire%20Taco%20Order">Email to Order</a>
+        <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1RzwwHQ1JeSeileFau8sAs4T"
+  publishable-key="pk_live_51RzbonQ1JeSeileF526PS6FiJZJD9puZOFUk7ipVk0OXvHIDd4Zt3pFmZRt1c23CFr3OBkHPeq09oNoPqZcofaId00RYfr53Ca"
+>
+</stripe-buy-button>
         <a class="btn ghost" href="{{ '/Fire-Taco-Sell-Sheet.pdf' | relative_url }}">Download Product Sheet</a>
       </div>
     </section>
